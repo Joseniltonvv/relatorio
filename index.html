@@ -35,6 +35,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
         }
 
         label {
@@ -290,10 +291,11 @@
 
             doc.save("relatorio-atos-ARENA.pdf");
         });
-        import { inject } from "@vercel/analytics"
+        
         // Carrega as equipes salvas no localStorage e preenche a tabela
         carregarEquipes();
         preencherTabela();
+        
     </script>
 </body>
 </html>
